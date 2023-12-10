@@ -1,6 +1,15 @@
 
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const mobileNav = document.querySelector('.mobile-nav');
+const closeMenu = document.querySelector('.close-menu');
 
-// function toggleMenu() {
-//     const navLinks = document.querySelector('.nav-links');
-//     navLinks.classList.toggle('show');
-// }
+hamburgerMenu.addEventListener('click', () => {
+  mobileNav.classList.toggle('active');
+});
+
+closeMenu.addEventListener('click', () => {
+    mobileNav.classList.remove('active');
+  });
+  
+
+
