@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="foto/LOGO.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery Website by Irga</title>
     <link rel="stylesheet" href="style-gallery-website.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -14,69 +16,93 @@
             <div class="logo">Gallery | IW</div>
           
             <div class="language-selector">
-              <label for="language">Language:</label>
-              <select id="language" name="language">
-                <option value="en">English</option>
-                <option value="id">Indonesia</option>
-                <option value="zh">China</option>
-                <option value="ja">Jepang</option>
+                <label for="language">Bahasa:</label>
+                <select id="language" name="language" onchange="changeLanguage()">
+                    <option value="id">Indonesia</option>
+                    <option value="en">English</option>
+                    <option value="zh">China</option>
+                    <option value="ja">Jepang</option>
                 </select>
             </div>
           
             <ul class="mobile-nav">
-              <li><a href="#">Game Saya</a></li>
-              <li><a href="#">YouTube | Coming Soon</a></li>
-              <li><a href="https://instagram.com/iga_whd?igshid=OGQ5ZDc2ODk2ZA==">Instagram Saya</a></li>
+              <li><a href="#">Game Favorit</a></li>
+              <li><a href="#">Musik Favorit</a></li>
+              <li><a href="https://instagram.com/iga_whd?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a></li>
               <li><a href="#">Privasi</a></li>
-              <li><a href="login-akun.html">LOGIN</a></li>
+              <li><a href="login-akun.html">MASUK</a></li>
             </ul>
           
             <button class="hamburger-menu" type="button">Menu</button>
           </nav>
     </header>
 
-
     <section id="gallery" class="gallery-section">
-        <h2 class="teks-di-tengah">FOTO</h2>
-        <h1>Kategori : Fotografi</h1>
+        <br><br><br><h1 class="teks-di-tengah">Dari Internet</h1>
+        <h3>Pexels</h3>
+        <p class="spasi-kanan"><br>Pexels adalah penyedia stok fotografi dan rekaman stok. Didirikan di Jerman pada tahun 2014 dan mengelola perpustakaan dengan lebih dari 3,2 juta stok foto dan video gratis. Wikipedia (Inggris). klik <a href="https://www.pexels.com/id-id/about/">disini</a> untuk informasi lebih lanjut.</p><br>
         <div class="gallery-container">
-            <!-- Placeholder images and videos -->
-            <!-- Replace these with your actual media files -->
         <div class="item photo">
                 <img src="foto/camera photo.jpg" alt="Photo 1">
         </div>
     </section>
+
+    <section id="gallery" class="gallery-section">
+        <h1 class="teks-di-tengah">Handphone</h1>
+        <h3>Redmi + GCam</h3>
+        <p class="spasi-kanan"><br>Di foto menggunakan aplikasi kamera dari Google atau GCam. Link Download GCamnya ada di <a href="https://www.celsoazevedo.com/files/android/google-camera/">sini</a> sebelum download, silahkan dipelajari dulu cara penggunaannya agar berfungsi dengan baik.</p><br>
+        <div class="gallery-container">
+        <div class="item photo">
+                <img src="foto/photo-2.jpg" alt="Photo 2">
+        </div>
+    </section>
+
     <section id="gallery" class="gallery-section1">
-        <h2 class="teks-di-tengah">VIDEO</h2>
-        <h1>Hype Abis!</h1>
+        <h1 class="teks-di-tengah">Video Random</h1><br>
+        <h2>Different Heaven - Safe And Sound House NCS - Copyright Free Music</h2><br>
         <div class="item video">
                 <video id="myVideo" controls width="100%" height="100%">
                     <source src="video/Different Heaven - Safe And Sound _ House _ NCS - Copyright Free Music.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
         </div>
+    </section>
+
+    <section>
+        <h2>SOMEBODY S PLEASURE Aziz Hedra Lirik dan Terjemah</h2><br>
         <div class="item video">
-            <video id="myVideo" controls width="100%" height="100%">
-                <source src="video/y2mate.is - SOMEBODY S PLEASURE Aziz Hedra Lirik dan Terjemah-f7vduX8UYcI-1080pp-1702216594.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="item video">
-        <video id="myVideo" controls width="100%" height="100%">
-            <source src="video/y2mate.is - Unknown Brain - Say Goodbye (ft. Marvin Divine) _ Electronic Pop _ NCS - Copyright Free Music-rdD-DMTWqU4-720p-1702220694.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        </div>
-        <div class="item video">
-            <video id="myVideo" controls width="100%" height="100%">
-                <source src="video/y2mate.is - Vicetone Nevada Lirik Dan Lirik Terjemahan Indonesia NRM Release -ipvWz422jo0-1080pp-1702216788.mp4" type="video/mp4">
+            <video id="myVideo" controls width="80%" height="80%">
+                <source src="video/y2mate.is - SOMEBODY S PLEASURE Aziz Hedra Lirik dan Terjemah-f7vduX8UYcI-1080pp-1702216594.mp4" type="video/mp4"><br>
                 Your browser does not support the video tag.
             </video>
         </div>
     </section>
-
-            <!-- Add more items as needed -->
+    <section>
+        <h2>Unknown Brain - Say Goodbye (ft. Marvin Divine) Electronic Pop NCS - Copyright Free Music</h2><br>
+        <div class="item video">
+        <video id="myVideo" controls width="100%" height="100%">
+            <source src="video/y2mate.is - Unknown Brain - Say Goodbye (ft. Marvin Divine) _ Electronic Pop _ NCS - Copyright Free Music-rdD-DMTWqU4-720p-1702220694.mp4" type="video/mp4"><br>
+            Your browser does not support the video tag.
+        </video>
         </div>
+    </section>
+    <section>
+        <h2>Vicetone Nevada Lirik Dan Lirik Terjemahan Indonesia NRM Release</h2><br>
+        <div class="item video">
+            <video id="myVideo" controls width="100%" height="100%">
+                <source src="video/y2mate.is - Vicetone Nevada Lirik Dan Lirik Terjemahan Indonesia NRM Release -ipvWz422jo0-1080pp-1702216788.mp4" type="video/mp4"><br>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    <section>
+        <h2>FIFTY FIFTY (피프티피프티) - 'Cupid' Official MV</h2><br>
+        <div class="item video">
+        <video id="myVideo" controls width="100%" height="100%">
+            <source src="video/FIFTY FIFTY (피프티피프티) - 'Cupid'  Official MV-(1080p).mp4" type="video/mp4"><br>
+            Your browser does not support the video tag.
+        </video>
+    </div>
     </section>
 
     <section id="about" class="about-section">
@@ -88,19 +114,20 @@
     </section>
 
     <section id="contact" class="contact-section">
-        <h2>Contact Us</h2>
+        <h2>Kontak Saya</h2>
         <p>Email: irgawahid34@gmail.com</p>
     </section>
 
     <section id="photo-source" class="contact-section">
-        <h2>Photo Source</h2>
+        <h2>Sumber Foto</h2>
         <p>* <a href="https://www.pexels.com/">https://www.pexels.com/</a></p>
     </section>
 
     <footer>
         <p>&copy; 2023 Gallery Website by Irga Wahid. All rights reserved. Mau donate? klik <a href="https://www.sociabuzz.com/">disini</a> ya </p>
-        <p>Cieee. Senyum-senyum</p>
-        <p>Website ini belum sempurna, yang sempurna itu cintamu padanya. Walawweee...</p>
+        <p>Website ini belum sempurna, yang sempurna itu cintamu padanya. Walaw e...</p>
+        <h1 class="teks-di-tengah">TERIMA KASIH!</h1>
+        <p>Daripada menunggu balesan dari dia, mending menunggu update-an fitur keren di website ini!</p>
     </footer>
 
     <script src="javascript-gallery-website.js"></script>

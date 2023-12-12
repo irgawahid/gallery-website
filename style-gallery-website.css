@@ -1,8 +1,11 @@
-@import url(
-
-);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Oswald:wght@200;300;400;500;600;700&family=Rubik:wght@400;500;700;800;900&display=swap');
+
 
 body {
     margin: 0;
@@ -12,8 +15,18 @@ body {
     background-color: rgb(211, 189, 231);
 }
 
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 500;
+}
+
+.spasi-kanan {
+  margin-right: 20px;
+}
+
 header {
     background-color: #333;
+    /* background-color: #458de6; */
     color: white;
     padding: 10px 20px;
     position: fixed;
