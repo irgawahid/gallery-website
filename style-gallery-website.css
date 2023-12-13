@@ -10,9 +10,28 @@
 body {
     margin: 0;
     padding: 0;
+    height: 1000px;
     font-family: 'Rubik', sans-serif;
     font-size: 200;
     background-color: rgb(211, 189, 231);
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .video-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 p {
@@ -102,6 +121,8 @@ nav a {
 
 .gallery-section1 {
     padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
 }
 
 .teks-di-tengah {
@@ -111,33 +132,64 @@ nav a {
     justify-content: center;
 }
 
+.section-video {
+  margin: 6px;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.item-video-lainnya {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.item-video-lainnya:hover {
+  transform: scale(1.05); /* Sesuaikan nilai zoom in yang diinginkan */
+}
+
+.item-video-lainnya video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 1000px; /* Ganti dengan lebar maksimum yang Anda inginkan */
+  margin: 0 auto; /* Menengahkan grid */
+}
 
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 3px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-.item {
-    position: relative;
-    overflow: hidden;
+.itemsforall {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-
-
-.item:hover .overlay {
-    opacity: 1;
-    cursor: pointer;
-}
-
-.item img,
-.item video {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: #131212;
+.itemsforall img,
+.itemsforall video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .about-section,
