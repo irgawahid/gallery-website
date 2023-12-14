@@ -74,3 +74,12 @@ closeMenu.addEventListener('click', () => {
   
 
 
+document.addEventListener("scroll", function() {
+    const contactSection = document.getElementById("contact");
+    const photoSourceSection = document.getElementById("photo-source");
+    const scrollPosition = window.scrollY;
+
+    // Adjust the values as needed
+    contactSection.style.bottom = `calc(-100px + ${scrollPosition}px)`;
+    photoSourceSection.style.bottom = `calc(-100px + ${scrollPosition}px)`;
+});

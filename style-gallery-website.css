@@ -8,9 +8,8 @@
 
 
 body {
-    margin: 0;
-    padding: 0;
-    height: 1000px;
+    height: 50000px;
+    min-height: 1000px;
     font-family: 'Rubik', sans-serif;
     font-size: 200;
     background-color: rgb(211, 189, 231);
@@ -133,8 +132,8 @@ nav a {
 }
 
 .section-video {
-  margin: 6px;
-  padding: 16px;
+  margin: 80px 4px;
+  padding-top: 80px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -142,32 +141,40 @@ nav a {
 }
 
 .item-video-lainnya {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  overflow: hidden;
+  width: 80%;
+  height: 100%;
+  border-radius: 14px;
   position: relative;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 
 .item-video-lainnya:hover {
   transform: scale(1.05); /* Sesuaikan nilai zoom in yang diinginkan */
 }
 
-.item-video-lainnya video {
+.item-video-lainnya {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
   object-fit: cover;
 }
 
+.custom-video {
+  width: 500px; /* Sesuaikan dengan lebar yang diinginkan, bisa dalam persentase atau nilai pixel */
+  height: 800px; /* Tinggi diset ke otomatis agar sesuai dengan rasio aspek video */
+  border-radius: 10px; /* Contoh penggunaan border-radius */
+  
+}
 
 
 .video-container {
   display: grid;
+  padding: 8px 8px;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  max-width: 1000px; /* Ganti dengan lebar maksimum yang Anda inginkan */
+  max-width: 10000px; /* Ganti dengan lebar maksimum yang Anda inginkan */
+  width: 1000px;
+  height: 500px;
   margin: 0 auto; /* Menengahkan grid */
 }
 
@@ -181,7 +188,7 @@ nav a {
 .itemsforall {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -192,15 +199,7 @@ nav a {
   height: auto;
 }
 
-.about-section,
-.contact-section,
-.photo-source-section {
-    padding: 10px 20px;
-    color: #ddd;
-    background-color: #292929;
-    position: relative;
-    z-index: 1;
-}
+
 
 /* HAMBURGER MENU */
 
@@ -378,38 +377,40 @@ nav a {
     }
     
 
-  /* @media (max-width: 850px) {
-    .navbar {
-        position: fixed;
-        width: 100%;
-        height: auto;
-        padding: 20px;
-        top: 0;
-        right: 0;
-        bottom: auto;
-        left: -100%;
-        display: block;
-        background: #2d2d2d;
-        transition: all 0.4s ease-in-out;
+    /* .about-section,
+    .contact-section,
+    .photo-source-section {
+      padding: 40px 20px;
+      color: #ddd;
+      background-color: #292929;
+      position: fixed;
+      text-align: center;
+      margin-top: 40px;
+      width: 100%;
+      bottom: 250px;
+      z-index: 0;
     }
-
-    .navbar a {
-        display: block;
-        color: #b3b3b3;
-        padding: 10px;
-        margin: 0px;
-        font-size: 1.5rem;
-        font-weight: 400;
+    
+    #contact {
+      bottom: 50px;
+      z-index: 1;
     }
-} */
+    
+    #photo-source {
+      bottom: 50px;
+      z-index: 1;
+    }
+    
+    footer {
+      background-color: #131212;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      box-shadow: rgba(0, 0, 0, 0.8);
+    }
+     */
 
-footer {
-    background-color: #131212;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    z-index: 2;
-    box-shadow: rgba(0, 0, 0, 0.8);
-}
-
+  

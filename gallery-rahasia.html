@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style-gallery-rahasia.css">
+  <title>Video Favorit</title>
+</head>
+<body>
+  <div id="container">
+    <video id="video" src="video/JJ SHIO - FIFTY-FIFTY.mp4" controls></video>
+  </div>
+  <script>
+    const password = "irgasayangabel";
+
+    const container = document.querySelector("#container");
+    const video = document.querySelector("#video");
+
+    const handleSubmit = () => {
+      const input = document.querySelector("input");
+      const value = input.value;
+
+      if (value === password) {
+        container.classList.remove("locked");
+        video.play();
+      } else {
+        alert("Password salah!");
+      }
+    };
+
+    const input = document.createElement("input");
+    input.type = "password";
+    input.placeholder = "Masukkan password";
+    input.addEventListener("keyup", (e) => {
+      if (e.keyCode === 13) {
+        handleSubmit();
+      }
+    });
+
+    const button = document.createElement("button");
+    button.textContent = "Masuk";
+    button.addEventListener("click", handleSubmit);
+
+    container.appendChild(input);
+    container.appendChild(button);
+
+
+  </script>
+</body>
+</html>
